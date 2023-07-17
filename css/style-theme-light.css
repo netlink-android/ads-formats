@@ -2741,7 +2741,7 @@
   
   .formats__line {
 	display: -webkit-box;
-	display: -ms-flexbox;
+	
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -2749,8 +2749,8 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	max-width: 1680px;
-	margin-left: auto;
+	max-width: 1920px;
+	
 	margin-right: auto;
 	overflow: hidden;
   }
@@ -2775,7 +2775,7 @@
 	/* vertical-align: center; */
 	text-align: left;
 	max-width: 480px;
-	padding-left: 20px;
+	padding-left: 0px;
   }
   
   .formats--bg .formats__about {
@@ -2801,8 +2801,8 @@
 	left: -5px;
 	background: url(../images/formats-phone.png) no-repeat;
 	background-size: contain;
-	width: 305px;
-	height: 634px;
+	width: 300px;
+	height: 638px;
 	z-index: 1;
   }
   
@@ -2810,16 +2810,16 @@
 	position: absolute;
 	top: 50%;
 	vertical-align: middle;
-	left: 0px;
-	width: 285px;
-	height: 650px;
+	left: 5px;
+	width: 280px;
+	height: 638px;
 	overflow: hidden;
   }
   
   .formats__video {
 	position: absolute;
 	top: 20px;
-	border-radius: 0px 0px 0px 0px;
+	border-radius: 15px;
 	/* left: -10px; */
 	/* right: 70px; */
   }
@@ -2848,17 +2848,17 @@
 	right: 0;
 	background: url(../images/formats-screen.png) no-repeat;
 	background-size: contain;
-	width: 838px;
+	width: 720px;
 	height: 638px;
 	z-index: 1;
   }
   
   .formats__pic--pc .formats__video-wrap {
-	top: 25px;
+	top: 5px;
 	left: 10px;
-	width: 820px;
-	height: 588px;
-	border-radius: 10px;
+	width: 700px;
+	height: 600px;
+	border-radius: 50px;
   }
   
   .formats__switch {
