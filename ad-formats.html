@@ -84,6 +84,9 @@
       <button class="tablinks" onclick="openCity(event, 'inimageads')">
         <h2>In-Image Ads</h2>
       </button>
+      <button class="tablinks" onclick="openCity(event, 'videoads')">
+        <h2>Video Ads</h2>
+      </button>
       <button class="tablinks" onclick="openCity(event, 'diversityads')">
         <h2>Diversity Ads</h2>
       </button>
@@ -446,7 +449,7 @@
                     playsinline
                   >
                     <source
-                      src="video/html5_interactive_phone.mp4"
+                      src="video/html5_carousel_phone.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -988,6 +991,189 @@
           </div>
         </section>
       </section> -->
+    </div>
+    <div id="videoads" class="tabcontent">
+      <div id="cards-ads">
+        <div id="cards-ads-1">
+          <div id="sec-1">
+            <div class="container">
+              <h4>In-Stream Video</h4>
+
+              <a href="#videoads-1">
+                <div class="scroll-down"></div>
+              </a>
+            </div>
+          </div>
+          <div id="sec-1">
+            <div class="container">
+              <h4>Out-Stream Video</h4>
+
+              <a href="#videoads-2">
+                <div class="scroll-down"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="videoads-1">
+        <section class="formats formats--mb" id="format-ibea">
+          <div class="formats__line">
+            <div class="formats__about wow fadeInRight">
+              <div class="formats__info">
+                <h2 class="formats__title title">In-Stream Video</h2>
+                <div class="formats__text text">
+                  Powerful advertising allows you to effectively promote your
+                  video content.
+                </div>
+                <div class="formats__switch">
+                  <!-- <button
+                    class="formats__switch-item formats__switch-item--mobile formats__switch-item--active"
+                    type="button"
+                  >
+                    Mobile
+                  </button> -->
+                  <button
+                    class="formats__switch-item formats__switch-item--desktop formats__switch-item--active"
+                    type="button"
+                    id="video_in_click"
+                  >
+                    Desktop
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="formats__pic formats__pic--pc"
+              href="https://netlink.vn/in-stream-video-ads.html"
+              target="_blank"
+            >
+              <div class="formats__screen">
+                <div class="formats__video-wrap">
+                  <video
+                    class="formats__video"
+                    preload="none"
+                    width="100%"
+                    autoplay=""
+                    muted=""
+                    loop
+                    playsinline
+                  >
+                    <source
+                      src="video/video_instream_desktop.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </a>
+            <!-- <a
+              class="formats__pic formats__pic--mb wow fadeInLeft"
+              href="https://netlink.vn/in-stream-video-ads.html"
+              target="_blank"
+            >
+              <div class="formats__block">
+                <div class="formats__phone"></div>
+                <div class="formats__video-wrap">
+                  <video
+                    class="formats__video"
+                    preload="none"
+                    width="100%"
+                    autoplay=""
+                    muted=""
+                    loop
+                    playsinline
+                  >
+                    <source src="video/html5_3d_phone.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </a> -->
+          </div>
+        </section>
+      </section>
+      <section id="videoads-2">
+        <section class="formats formats--bg formats--mb" id="format-ib">
+          <div class="formats__line">
+            <div class="formats__about wow fadeInLeft">
+              <div class="formats__info">
+                <h2 class="formats__title title">Out-Stream Video</h2>
+                <div class="formats__text text">
+                  By using this format, you can increase brand awareness, reach
+                  your target audience and ensure that your message reaches
+                  clearly.
+                </div>
+                <div class="formats__switch">
+                  <button
+                    class="formats__switch-item formats__switch-item--desktop"
+                    type="button"
+                    id="video_out_click"
+                  >
+                    Desktop
+                  </button>
+                </div>
+              </div>
+            </div>
+            <a
+              class="formats__pic formats__pic--pc"
+              href="https://netlink.vn/outstream-video-ads.html"
+              target="_blank"
+            >
+              <div class="formats__screen">
+                <div class="formats__video-wrap">
+                  <video
+                    class="formats__video"
+                    preload="none"
+                    width="100%"
+                    autoplay=""
+                    muted=""
+                    loop
+                    playsinline
+                  >
+                    <source
+                      src="video/video_outstream_desktop.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </a>
+            <!-- <a
+              class="formats__pic formats__pic--mb wow fadeInRight"
+              href="https://netlink.vn/outstream-video-ads.html"
+              target="_blank"
+            >
+              <div class="formats__block">
+                <div class="formats__phone"></div>
+                <div class="formats__video-wrap">
+                  <video
+                    class="formats__video"
+                    preload="none"
+                    width="100%"
+                    autoplay=""
+                    muted=""
+                    loop
+                    playsinline
+                  >
+                    <source
+                      src="video/html5_300x600_phone.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </a> -->
+          </div>
+        </section>
+        <script>
+          var video_inbtn = document.getElementById("video_in_click");
+          var video_outbtn = document.getElementById("video_out_click");
+          window.onload = function () {
+            // Fetch the content of the included file
+            video_inbtn.click();
+            video_outbtn.click();
+          };
+        </script>
+      </section>
     </div>
 
     <div id="diversityads" class="tabcontent">
