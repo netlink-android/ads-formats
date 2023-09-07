@@ -1,40 +1,247 @@
 /* Style the tab */
 .tab_ads {
-    display: flex;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab_ads button {
-    width: 200px;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+  width: 200px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tab_ads button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 .tab_ads button.active {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#cards-ads {
+  margin-top: 50px;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+  align-items: center;
+}
+#cards-ads-1 {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+}
+#cards-ads-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  margin-top: 30px;
+}
+#sec-1 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0d4d8a, #3751e7);
+  color: white;
+  border-radius: 7px;
+  margin-left: 30px;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+  display: table-cell;
+  text-align: center;
+}
+
+.scroll-down {
+  vertical-align: middle;
+  align-items: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 1px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@media (max-width: 1920px) {
+  .tab_ads button {
+    width: 200px;
+    font-size: 16px;
+  }
+  .logo__netlink{
+    width: 200px;
+    height: 40px;
+    margin-left: 150px;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+  #sec-1 {
+    height: 130px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #cards-ads-1 {
+    width: 90%;
+    inline-size: 90%;
+  }
+  #cards-ads-2 {
+    width: 90%;
+  }
+  .scroll-down {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .tab_ads button {
+    width: 180px;
+    font-size: 14px;
+  }
+  #sec-1 {
+    height: 130px;
+    width: 180px;
+    font-size: 12px;
+  }
+  #cards-ads-1 {
+    width: 90%;
+    inline-size: 90%;
+  }
+  #cards-ads-2 {
+    width: 90%;
+  }
+  .scroll-down {
+    width: 28px;
+    height: 28px;
+  }
+  .logo__netlink{
+    width: 170px;
+    height: 30px;
+    margin-left: 120px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 959px) {
+  .tab_ads button {
+    width: 150px;
+    font-size: 12px;
+  }
+  #sec-1 {
+    height: 110px;
+    width: 160px;
+    font-size: 10px;
+  }
+  #cards-ads-1 {
+    width: 80%;
+  }
+  #cards-ads-2 {
+    width: 80%;
+  }
+  .scroll-down {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+  .logo__netlink{
+    width: 140px;
+    height: 25px;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 639px) {
+  .tab_ads button {
+    width: 120px;
+    font-size: 10px;
+  }
+  #sec-1 {
+    height: 90px;
+    width: 140px;
+    font-size: 8px;
+  }
+  #cards-ads-1 {
+    width: 70%;
+  }
+  #cards-ads-2 {
+    width: 50%;
+    justify-items: center;
+  }
+  .scroll-down {
+    width: 50%;
+  }
+  .logo__netlink{
+    width: 100px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .tab_ads button {
+    width: 105px;
+    font-size: 8px;
+  }
+  #sec-1 {
+    height: 70px;
+    width: 120px;
+    font-size: 6px;
+  }
+  #cards-ads {
+    width: 60%;
+  }
+  #cards-ads-2 {
+    width: 60%;
+  }
+  .scroll-down {
+    width: 60%;
+  }
+  .logo__netlink{
+    width: 80px;
+    height: 25px;
+    margin-top: 40px;
+  }
 }
